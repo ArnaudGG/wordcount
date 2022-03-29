@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+</head>
+<body>
+This is the HomePage.
+<br>
+<!--{{ hi_there }}-->
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="5" name="fulltext">
+    </textarea>
+    <br>
+    <input type="submit" value="Count!" />
+</form>
+
+<a href="{% url 'about' %}"><input value="what about this site?"/></a>
+</body>
+</html>
